@@ -5,3 +5,10 @@
 -- 20° of latitude, 75° of longitude
 -- 0° of latitude, 55° degrees of longitude
 -- 0° of latitude, 75° degrees of longitude
+
+SELECT "latitude", "longitude"
+FROM "normals"
+WHERE ("latitude" = 20 AND "longitude" = 55)
+OR ("latitude" = 20 AND "longitude" = 75)
+OR ("latitude" = 0 AND "longitude" = 55)
+OR ("latitude" = 0 AND "longitude" = 75);
