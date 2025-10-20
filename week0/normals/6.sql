@@ -6,9 +6,7 @@
 -- 0° of latitude, 55° degrees of longitude
 -- 0° of latitude, 75° degrees of longitude
 
-SELECT "latitude", "longitude"
+SELECT "latitude", "longitude", "50m"
 FROM "normals"
-WHERE ("latitude" > 20 AND "longitude" < 55);
--- OR ("latitude" = 20 AND "longitude" = 75)
--- OR ("latitude" = 0 AND "longitude" = 55)
--- OR ("latitude" = 0 AND "longitude" = 75);
+WHERE "latitude" BETWEEN 0 AND 20
+AND "longitude" BETWEEN 55 AND 75;
