@@ -3,4 +3,4 @@
 
 SELECT "first_name", "last_name", "debut"
 FROM "players"
-WHERE
+WHERE "birth_city" = 'Pittsburgh';
